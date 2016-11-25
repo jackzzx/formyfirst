@@ -37,3 +37,200 @@ run gitPushRunnable
 2016/11/25 15:08:01
 Window service start gitPush
 
+2016/11/25 15:08:01
+Git add file:Heartbeat_2016-11-25.log failed, Reason:
+LibGit2Sharp.NotFoundException: Could not find 'C:/dir/github/formyfirst/Heartbeat_2016-11-25.log' to stat: 系统找不到指定的文件。
+
+   在 LibGit2Sharp.Core.Ensure.HandleError(Int32 result) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Core\Ensure.cs:行号 160
+   在 LibGit2Sharp.Index.Add(String pathInTheWorkdir) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Index.cs:行号 189
+   在 TimeTaskWinService.Gits.GitBaseUse.Add(String file) 位置 D:\EC\TimeTaskWinService\Gits\GitBaseUse.cs:行号 53
+
+2016/11/25 15:08:01
+Git add file:WEB.log failed, Reason:
+LibGit2Sharp.NotFoundException: Could not find 'C:/dir/github/formyfirst/WEB.log' to stat: 系统找不到指定的文件。
+
+   在 LibGit2Sharp.Core.Ensure.HandleError(Int32 result) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Core\Ensure.cs:行号 160
+   在 LibGit2Sharp.Index.Add(String pathInTheWorkdir) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Index.cs:行号 189
+   在 TimeTaskWinService.Gits.GitBaseUse.Add(String file) 位置 D:\EC\TimeTaskWinService\Gits\GitBaseUse.cs:行号 53
+
+2016/11/25 15:08:01
+Git add file:time_list.ini failed, Reason:
+LibGit2Sharp.NotFoundException: Could not find 'C:/dir/github/formyfirst/time_list.ini' to stat: 系统找不到指定的文件。
+
+   在 LibGit2Sharp.Core.Ensure.HandleError(Int32 result) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Core\Ensure.cs:行号 160
+   在 LibGit2Sharp.Index.Add(String pathInTheWorkdir) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Index.cs:行号 189
+   在 TimeTaskWinService.Gits.GitBaseUse.Add(String file) 位置 D:\EC\TimeTaskWinService\Gits\GitBaseUse.cs:行号 53
+
+2016/11/25 15:08:02
+Type:GitBaseUse, Content:Push data to remote
+
+2016/11/25 15:08:05
+run times
+
+2016/11/25 15:08:44
+Window service will stop
+
+2016/11/25 16:22:31
+Read and parse tick time list failed, Reason:
+System.IO.DirectoryNotFoundException: 未能找到路径“C:\Windows\system32\YOUR\FILE\time_list.ini”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding)
+   在 System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   在 System.IO.File.ReadAllLines(String path)
+   在 TimeTaskWinService.Utility.Configuration.parseTimeLists() 位置 D:\EC\TimeTaskWinService\Utility\Configuration.cs:行号 390
+
+2016/11/25 16:22:31
+ ********** system dump information by class of Configuration ********** 
+mHostBase:http://hrportal.zte.com.cn
+mHostLoginPart:/HRPortal/Service/LoginService.ashx
+mHostTimeTickPart:/HRPortal/Service/ATMService.ashx
+mUserId:YOUR ID
+mUserPassword:YOUR PWD
+
+m2TickTimeListFile:YOUR\FILE\time_list.ini
+
+*** To tick time list ***
+       Time          Status
+2016-06-06 21:32:09    N
+2016-06-07 07:23:15    N
+2016-06-07 21:14:16    N
+2016-06-08 07:06:17    N
+2016-06-08 18:48:13    N
+2016-06-12 07:12:42    N
+2016-06-12 21:34:24    N
+2016-06-13 07:06:17    N
+2016-06-13 20:48:13    N
+2016-06-14 07:23:32    N
+2016-06-14 18:14:35    N
+2016-06-15 07:19:35    N
+2016-06-15 18:56:33    N
+2016-06-16 07:13:26    N
+2016-06-16 19:02:18    N
+2016-06-17 07:35:17    N
+2016-06-17 18:46:25    N
+2016-06-20 07:13:05    N
+2016-06-20 19:58:19    N
+2016-06-21 07:35:17    N
+2016-06-21 18:46:25    N
+2016-06-22 07:15:56    N
+2016-06-22 18:46:35    N
+2016-06-23 07:40:29    N
+2016-06-23 19:15:30    N
+2016-06-24 07:35:17    N
+2016-06-24 20:46:25    N
+2016-06-25 08:10:23    N
+2016-06-25 18:33:29    N
+2016-06-27 07:26:56    N
+2016-06-27 19:35:15    N
+2016-06-28 07:35:13    N
+2016-06-28 18:55:34    N
+2016-06-29 07:26:56    N
+2016-06-29 18:54:32    N
+2016-06-30 07:13:18    N
+2016-06-30 19:24:17    N
+2016-07-01 07:18:32    N
+2016-07-01 18:32:51    N
+2016-07-04 07:22:14    N
+2016-07-04 18:15:13    N
+2016-07-05 07:18:32    N
+2016-07-05 18:56:25    N
+2016-07-06 07:33:18    N
+2016-07-06 20:00:15    N
+2016-07-07 07:21:03    N
+2016-07-07 19:44:32    N
+2016-07-08 07:55:17    N
+2016-07-08 19:05:35    N
+2016-07-11 07:32:15    N
+2016-07-11 20:11:32    N
+2016-07-12 07:32:15    N
+2016-07-12 19:05:43    N
+2016-07-13 07:19:54    N
+2016-07-13 18:10:34    N
+2016-07-14 07:32:05    N
+2016-07-14 20:02:54    N
+2016-07-15 08:01:52    N
+2016-07-15 18:35:22    N
+2016-07-18 07:33:32    N
+2016-07-18 18:45:18    N
+2016-07-19 07:15:22    N
+2016-07-19 18:35:14    N
+2016-07-20 07:45:35    N
+2016-07-20 18:03:19    N
+2016-07-21 07:18:32    N
+2016-07-21 20:01:39    N
+2016-07-22 07:06:17    N
+2016-07-22 18:11:06    N
+2016-07-25 07:16:52    N
+2016-07-25 19:08:17    N
+2016-07-26 07:17:06    N
+2016-07-26 18:33:18    N
+2016-07-27 07:19:50    N
+2016-07-27 19:10:54    N
+2016-07-28 07:25:17    N
+2016-07-28 18:15:34    N
+2016-07-29 07:15:26    N
+2016-07-29 18:45:35    N
+2016-08-01 07:30:26    N
+2016-08-01 17:55:35    N
+2016-08-02 07:26:17    N
+2016-08-02 18:36:52    N
+2016-08-03 07:19:33    N
+2016-08-03 18:19:35    N
+2016-08-04 07:35:16    N
+2016-08-04 18:16:25    N
+2016-08-05 07:18:34    N
+2016-08-05 18:16:42    N
+2016-08-06 09:16:16    N
+2016-08-06 17:22:33    N
+2016-08-08 07:26:46    N
+2016-08-08 18:19:56    N
+2016-08-09 07:45:18    N
+2016-08-09 17:59:46    N
+2016-08-10 07:44:27    N
+2016-08-10 18:14:26    N
+2016-08-11 08:01:47    N
+2016-08-11 19:22:34    N
+2016-08-12 07:39:21    N
+2016-08-12 18:06:28    N
+2016-08-15 07:34:18    N
+2016-08-15 17:55:43    N
+2016-08-16 07:54:42    N
+2016-08-16 18:33:18    N
+2016-08-17 07:34:45    N
+2016-08-17 18:08:17    N
+2016-08-18 07:25:37    N
+2016-08-18 18:09:48    N
+2016-08-22 07:18:06    N
+2016-08-22 17:45:27    N
+2016-08-23 07:32:54    N
+2016-08-23 17:58:34    N
+2016-08-24 07:36:18    N
+2016-08-24 17:51:43    N
+2016-08-25 07:44:48    N
+2016-08-25 17:49:44    N
+2016-08-26 07:18:34    N
+2016-08-26 17:55:37    N
+2016-08-29 07:34:48    N
+2016-08-29 18:18:17    N
+2016-08-30 07:48:33    N
+2016-08-30 18:37:18    N
+2016-08-31 07:44:29    N
+2016-08-31 18:08:19    N
+
+
+
+2016/11/25 16:22:31
+run webTickRunnable
+
+2016/11/25 16:22:31
+Window service start webTick
+
+2016/11/25 16:22:31
+run gitPushRunnable
+
+2016/11/25 16:22:31
+Window service start gitPush
+
