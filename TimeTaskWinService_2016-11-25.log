@@ -1,96 +1,12 @@
-2016/11/25 15:08:01
-Read file @C:\dir\github\formyfirst\TimeTaskWinService.ini failed, Reason:
-System.IO.FileNotFoundException: 未能找到文件“C:\dir\github\formyfirst\TimeTaskWinService.ini”。
-文件名:“C:\dir\github\formyfirst\TimeTaskWinService.ini”
-   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   在 System.IO.StreamReader..ctor(String path, Encoding encoding)
-   在 System.IO.File.InternalReadAllLines(String path, Encoding encoding)
-   在 System.IO.File.ReadAllLines(String path)
-   在 TimeTaskWinService.Utility.Configuration.parse() 位置 D:\EC\TimeTaskWinService\Utility\Configuration.cs:行号 143
-
-2016/11/25 15:08:01
+2016/11/25 16:28:20
  ********** system dump information by class of Configuration ********** 
 mHostBase:http://hrportal.zte.com.cn
 mHostLoginPart:/HRPortal/Service/LoginService.ashx
 mHostTimeTickPart:/HRPortal/Service/ATMService.ashx
-mUserId:
-mUserPassword:
+mUserId:10046848
+mUserPassword:146848vV
 
-m2TickTimeListFile:
-
-m2TickTimeList:null
-
-
-
-2016/11/25 15:08:01
-run webTickRunnable
-
-2016/11/25 15:08:01
-Window service start webTick
-
-2016/11/25 15:08:01
-run gitPushRunnable
-
-2016/11/25 15:08:01
-Window service start gitPush
-
-2016/11/25 15:08:01
-Git add file:Heartbeat_2016-11-25.log failed, Reason:
-LibGit2Sharp.NotFoundException: Could not find 'C:/dir/github/formyfirst/Heartbeat_2016-11-25.log' to stat: 系统找不到指定的文件。
-
-   在 LibGit2Sharp.Core.Ensure.HandleError(Int32 result) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Core\Ensure.cs:行号 160
-   在 LibGit2Sharp.Index.Add(String pathInTheWorkdir) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Index.cs:行号 189
-   在 TimeTaskWinService.Gits.GitBaseUse.Add(String file) 位置 D:\EC\TimeTaskWinService\Gits\GitBaseUse.cs:行号 53
-
-2016/11/25 15:08:01
-Git add file:WEB.log failed, Reason:
-LibGit2Sharp.NotFoundException: Could not find 'C:/dir/github/formyfirst/WEB.log' to stat: 系统找不到指定的文件。
-
-   在 LibGit2Sharp.Core.Ensure.HandleError(Int32 result) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Core\Ensure.cs:行号 160
-   在 LibGit2Sharp.Index.Add(String pathInTheWorkdir) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Index.cs:行号 189
-   在 TimeTaskWinService.Gits.GitBaseUse.Add(String file) 位置 D:\EC\TimeTaskWinService\Gits\GitBaseUse.cs:行号 53
-
-2016/11/25 15:08:01
-Git add file:time_list.ini failed, Reason:
-LibGit2Sharp.NotFoundException: Could not find 'C:/dir/github/formyfirst/time_list.ini' to stat: 系统找不到指定的文件。
-
-   在 LibGit2Sharp.Core.Ensure.HandleError(Int32 result) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Core\Ensure.cs:行号 160
-   在 LibGit2Sharp.Index.Add(String pathInTheWorkdir) 位置 c:\Git\libgit2sharp\LibGit2Sharp\Index.cs:行号 189
-   在 TimeTaskWinService.Gits.GitBaseUse.Add(String file) 位置 D:\EC\TimeTaskWinService\Gits\GitBaseUse.cs:行号 53
-
-2016/11/25 15:08:02
-Type:GitBaseUse, Content:Push data to remote
-
-2016/11/25 15:08:05
-run times
-
-2016/11/25 15:08:44
-Window service will stop
-
-2016/11/25 16:22:31
-Read and parse tick time list failed, Reason:
-System.IO.DirectoryNotFoundException: 未能找到路径“C:\Windows\system32\YOUR\FILE\time_list.ini”的一部分。
-   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   在 System.IO.StreamReader..ctor(String path, Encoding encoding)
-   在 System.IO.File.InternalReadAllLines(String path, Encoding encoding)
-   在 System.IO.File.ReadAllLines(String path)
-   在 TimeTaskWinService.Utility.Configuration.parseTimeLists() 位置 D:\EC\TimeTaskWinService\Utility\Configuration.cs:行号 390
-
-2016/11/25 16:22:31
- ********** system dump information by class of Configuration ********** 
-mHostBase:http://hrportal.zte.com.cn
-mHostLoginPart:/HRPortal/Service/LoginService.ashx
-mHostTimeTickPart:/HRPortal/Service/ATMService.ashx
-mUserId:YOUR ID
-mUserPassword:YOUR PWD
-
-m2TickTimeListFile:YOUR\FILE\time_list.ini
+m2TickTimeListFile:C:\dir\github\formyfirst\time_list.ini
 
 *** To tick time list ***
        Time          Status
@@ -222,15 +138,15 @@ m2TickTimeListFile:YOUR\FILE\time_list.ini
 
 
 
-2016/11/25 16:22:31
+2016/11/25 16:28:20
 run webTickRunnable
 
-2016/11/25 16:22:31
+2016/11/25 16:28:20
 Window service start webTick
 
-2016/11/25 16:22:31
+2016/11/25 16:28:20
 run gitPushRunnable
 
-2016/11/25 16:22:31
+2016/11/25 16:28:20
 Window service start gitPush
 
